@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GetForegroundWindow
 {
-    public partial class UserControl3 : UserControl
+    public partial class BotSkin : UserControl
     {
-        public UserControl3()
+        public BotSkin()
         {
             InitializeComponent();
         }

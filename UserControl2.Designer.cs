@@ -1,6 +1,6 @@
 ﻿namespace GetForegroundWindow
 {
-    partial class UserControl2
+    partial class TimeSetting
     {
         /// <summary> 
         /// 設計工具所需的變數。
@@ -30,188 +30,165 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            btnBotSensor = new Button();
-            btnBotSkin = new Button();
-            label2 = new Label();
-            btnTimeSetting = new Button();
-            btnTimeReport = new Button();
             label3 = new Label();
-            btnForm = new Button();
-            btnBuger = new Button();
+            materialSwitch2 = new ReaLTaiizor.Controls.MaterialSwitch();
+            panel2 = new Panel();
+            label4 = new Label();
+            materialSwitch3 = new ReaLTaiizor.Controls.MaterialSwitch();
+            panel3 = new Panel();
+            label2 = new Label();
+            materialSwitch1 = new ReaLTaiizor.Controls.MaterialSwitch();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Font = new Font("Microsoft JhengHei UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            label1.Location = new Point(386, 197);
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft JhengHei UI", 24F);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(475, 259);
+            label1.Size = new Size(219, 61);
             label1.TabIndex = 1;
             label1.Text = "時間設定";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonHighlight;
-            panel1.Controls.Add(btnBotSensor);
-            panel1.Controls.Add(btnBotSkin);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(btnTimeSetting);
-            panel1.Controls.Add(btnTimeReport);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(btnForm);
-            panel1.Controls.Add(btnBuger);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
+            panel1.Controls.Add(materialSwitch2);
+            panel1.Location = new Point(384, 82);
             panel1.Name = "panel1";
-            panel1.Size = new Size(236, 707);
-            panel1.TabIndex = 2;
-            // 
-            // btnBotSensor
-            // 
-            btnBotSensor.Dock = DockStyle.Top;
-            btnBotSensor.FlatAppearance.BorderSize = 0;
-            btnBotSensor.FlatStyle = FlatStyle.Flat;
-            btnBotSensor.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnBotSensor.Location = new Point(0, 399);
-            btnBotSensor.Name = "btnBotSensor";
-            btnBotSensor.Size = new Size(236, 57);
-            btnBotSensor.TabIndex = 5;
-            btnBotSensor.Tag = "UserControl4";
-            btnBotSensor.Text = "小管家感知設定";
-            btnBotSensor.TextAlign = ContentAlignment.MiddleLeft;
-            btnBotSensor.UseVisualStyleBackColor = true;
-            btnBotSensor.Click += buttonControlForm_Click;
-            // 
-            // btnBotSkin
-            // 
-            btnBotSkin.Dock = DockStyle.Top;
-            btnBotSkin.FlatAppearance.BorderSize = 0;
-            btnBotSkin.FlatStyle = FlatStyle.Flat;
-            btnBotSkin.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnBotSkin.Location = new Point(0, 342);
-            btnBotSkin.Name = "btnBotSkin";
-            btnBotSkin.Size = new Size(236, 57);
-            btnBotSkin.TabIndex = 3;
-            btnBotSkin.Tag = "UserControl3";
-            btnBotSkin.Text = "小管家外觀設定";
-            btnBotSkin.TextAlign = ContentAlignment.MiddleLeft;
-            btnBotSkin.UseVisualStyleBackColor = true;
-            btnBotSkin.Click += buttonControlForm_Click;
-            // 
-            // label2
-            // 
-            label2.BackColor = SystemColors.Control;
-            label2.Dock = DockStyle.Top;
-            label2.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            label2.Location = new Point(0, 285);
-            label2.Name = "label2";
-            label2.Size = new Size(236, 57);
-            label2.TabIndex = 4;
-            label2.Text = "小管家相關";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // btnTimeSetting
-            // 
-            btnTimeSetting.Dock = DockStyle.Top;
-            btnTimeSetting.FlatAppearance.BorderSize = 0;
-            btnTimeSetting.FlatStyle = FlatStyle.Flat;
-            btnTimeSetting.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnTimeSetting.Location = new Point(0, 228);
-            btnTimeSetting.Name = "btnTimeSetting";
-            btnTimeSetting.Size = new Size(236, 57);
-            btnTimeSetting.TabIndex = 2;
-            btnTimeSetting.Tag = "UserControl2";
-            btnTimeSetting.Text = "使用時間設定";
-            btnTimeSetting.TextAlign = ContentAlignment.MiddleLeft;
-            btnTimeSetting.UseVisualStyleBackColor = true;
-            btnTimeSetting.Click += buttonControlForm_Click;
-            // 
-            // btnTimeReport
-            // 
-            btnTimeReport.Dock = DockStyle.Top;
-            btnTimeReport.FlatAppearance.BorderSize = 0;
-            btnTimeReport.FlatStyle = FlatStyle.Flat;
-            btnTimeReport.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnTimeReport.Location = new Point(0, 171);
-            btnTimeReport.Name = "btnTimeReport";
-            btnTimeReport.Size = new Size(236, 57);
-            btnTimeReport.TabIndex = 1;
-            btnTimeReport.Tag = "UserControl1";
-            btnTimeReport.Text = "使用時間報表";
-            btnTimeReport.TextAlign = ContentAlignment.MiddleLeft;
-            btnTimeReport.UseVisualStyleBackColor = true;
-            btnTimeReport.Click += buttonControlForm_Click;
+            panel1.Size = new Size(239, 69);
+            panel1.TabIndex = 6;
             // 
             // label3
             // 
-            label3.BackColor = SystemColors.Control;
-            label3.Dock = DockStyle.Top;
-            label3.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            label3.Location = new Point(0, 114);
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft JhengHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            label3.Location = new Point(84, 16);
             label3.Name = "label3";
-            label3.Size = new Size(236, 57);
-            label3.TabIndex = 1;
-            label3.Text = "使用時間相關";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            label3.Size = new Size(146, 41);
+            label3.TabIndex = 7;
+            label3.Text = "畫面偵測";
             // 
-            // btnForm
+            // materialSwitch2
             // 
-            btnForm.Dock = DockStyle.Top;
-            btnForm.FlatAppearance.BorderSize = 0;
-            btnForm.FlatStyle = FlatStyle.Flat;
-            btnForm.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnForm.Location = new Point(0, 57);
-            btnForm.Margin = new Padding(2);
-            btnForm.Name = "btnForm";
-            btnForm.Size = new Size(236, 57);
-            btnForm.TabIndex = 7;
-            btnForm.Tag = "UserControl1";
-            btnForm.Text = "主畫面";
-            btnForm.TextAlign = ContentAlignment.MiddleLeft;
-            btnForm.UseVisualStyleBackColor = true;
+            materialSwitch2.AutoSize = true;
+            materialSwitch2.Depth = 0;
+            materialSwitch2.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            materialSwitch2.Location = new Point(9, 7);
+            materialSwitch2.Margin = new Padding(0);
+            materialSwitch2.MouseLocation = new Point(-1, -1);
+            materialSwitch2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialSwitch2.Name = "materialSwitch2";
+            materialSwitch2.Ripple = true;
+            materialSwitch2.Size = new Size(87, 55);
+            materialSwitch2.TabIndex = 6;
+            materialSwitch2.UseAccentColor = false;
+            materialSwitch2.UseVisualStyleBackColor = true;
             // 
-            // btnBuger
+            // panel2
             // 
-            btnBuger.BackColor = SystemColors.ButtonHighlight;
-            btnBuger.BackgroundImageLayout = ImageLayout.Stretch;
-            btnBuger.Dock = DockStyle.Top;
-            btnBuger.FlatAppearance.BorderSize = 0;
-            btnBuger.FlatStyle = FlatStyle.Flat;
-            btnBuger.Font = new Font("Microsoft JhengHei UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 136);
-            btnBuger.Image = Properties.Resources.螢幕擷取畫面_2026_10_04_2040072;
-            btnBuger.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBuger.Location = new Point(0, 0);
-            btnBuger.Name = "btnBuger";
-            btnBuger.Size = new Size(236, 57);
-            btnBuger.TabIndex = 1;
-            btnBuger.TextAlign = ContentAlignment.MiddleLeft;
-            btnBuger.UseVisualStyleBackColor = false;
-            btnBuger.Click += button3_Click;
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(materialSwitch3);
+            panel2.Location = new Point(695, 82);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(239, 69);
+            panel2.TabIndex = 7;
             // 
-            // UserControl2
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft JhengHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            label4.Location = new Point(84, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(146, 41);
+            label4.TabIndex = 7;
+            label4.Text = "畫面偵測";
+            // 
+            // materialSwitch3
+            // 
+            materialSwitch3.AutoSize = true;
+            materialSwitch3.Depth = 0;
+            materialSwitch3.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            materialSwitch3.Location = new Point(9, 7);
+            materialSwitch3.Margin = new Padding(0);
+            materialSwitch3.MouseLocation = new Point(-1, -1);
+            materialSwitch3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialSwitch3.Name = "materialSwitch3";
+            materialSwitch3.Ripple = true;
+            materialSwitch3.Size = new Size(87, 55);
+            materialSwitch3.TabIndex = 6;
+            materialSwitch3.UseAccentColor = false;
+            materialSwitch3.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(materialSwitch1);
+            panel3.Location = new Point(17, 82);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(239, 69);
+            panel3.TabIndex = 8;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft JhengHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            label2.Location = new Point(84, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(146, 41);
+            label2.TabIndex = 7;
+            label2.Text = "畫面偵測";
+            // 
+            // materialSwitch1
+            // 
+            materialSwitch1.AutoSize = true;
+            materialSwitch1.Depth = 0;
+            materialSwitch1.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            materialSwitch1.Location = new Point(9, 7);
+            materialSwitch1.Margin = new Padding(0);
+            materialSwitch1.MouseLocation = new Point(-1, -1);
+            materialSwitch1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialSwitch1.Name = "materialSwitch1";
+            materialSwitch1.Ripple = true;
+            materialSwitch1.Size = new Size(87, 55);
+            materialSwitch1.TabIndex = 6;
+            materialSwitch1.UseAccentColor = false;
+            materialSwitch1.UseVisualStyleBackColor = true;
+            // 
+            // TimeSetting
             // 
             AutoScaleMode = AutoScaleMode.None;
+            Controls.Add(panel3);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label1);
-            Name = "UserControl2";
+            Name = "TimeSetting";
             Size = new Size(1003, 707);
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
         private Panel panel1;
-        private Button btnBuger;
-        private Button btnBotSensor;
-        private Button btnBotSkin;
-        private Label label2;
-        private Button btnTimeSetting;
-        private Button btnTimeReport;
         private Label label3;
-        private Button btnForm;
+        private ReaLTaiizor.Controls.MaterialSwitch materialSwitch2;
+        private Panel panel2;
+        private Label label4;
+        private ReaLTaiizor.Controls.MaterialSwitch materialSwitch3;
+        private Panel panel3;
+        private Label label2;
+        private ReaLTaiizor.Controls.MaterialSwitch materialSwitch1;
     }
 }

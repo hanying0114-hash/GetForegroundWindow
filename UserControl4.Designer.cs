@@ -1,6 +1,6 @@
 ﻿namespace GetForegroundWindow
 {
-    partial class UserControl4
+    partial class BotSensor
     {
         /// <summary> 
         /// 設計工具所需的變數。
@@ -28,10 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(486, 295);
+            label1.Name = "label1";
+            label1.Size = new Size(96, 23);
+            label1.TabIndex = 0;
+            label1.Text = "BotSensor";
+            // 
+            // BotSensor
+            // 
+            AutoScaleDimensions = new SizeF(11F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label1);
+            Name = "BotSensor";
+            Size = new Size(1003, 707);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

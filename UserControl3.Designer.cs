@@ -1,6 +1,6 @@
 ﻿namespace GetForegroundWindow
 {
-    partial class UserControl3
+    partial class BotSkin
     {
         /// <summary> 
         /// 設計工具所需的變數。
@@ -28,10 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(477, 246);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 23);
+            label1.TabIndex = 0;
+            label1.Text = "BotSkin";
+            // 
+            // BotSkin
+            // 
+            AutoScaleDimensions = new SizeF(11F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label1);
+            Name = "BotSkin";
+            Size = new Size(1003, 707);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }
